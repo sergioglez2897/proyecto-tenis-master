@@ -11,7 +11,7 @@ if not st.session_state.get('autenticado', False):
 # 2. FUENTES DE DATOS
 @st.cache_data
 def cargar_datos():
-    df = pd.read_csv("data/datos_escuela.csv")
+    df = pd.read_csv("demo_tenis/data/datos_escuela.csv")
     df['Fecha Alta'] = pd.to_datetime(df['Fecha Alta'])
     df['Fecha Baja'] = pd.to_datetime(df['Fecha Baja'])
     df['Grupo_Completo'] = df['Grupo'] + " (" + df['Sede'] + ")"
