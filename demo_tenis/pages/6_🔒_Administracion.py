@@ -11,7 +11,7 @@ st.success("✅ Acceso Autorizado")
 
 # Inicializar el DataFrame en la sesión si no existe para que los cambios se mantengan al navegar
 if 'df_alumnos' not in st.session_state:
-    df_base = pd.read_csv("data/datos_escuela.csv")
+    df_base = pd.read_csv("demo_tenis/data/datos_escuela.csv")
     df_base['Fecha Alta'] = pd.to_datetime(df_base['Fecha Alta'])
     st.session_state['df_alumnos'] = df_base
 
