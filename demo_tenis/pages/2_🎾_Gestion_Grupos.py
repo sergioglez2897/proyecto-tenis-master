@@ -9,7 +9,7 @@ st.title("🎾 GESTIÓN DE GRUPOS")
 
 @st.cache_data
 def cargar_datos():
-    df = pd.read_csv("data/datos_escuela.csv")
+    df = pd.read_csv("demo_tenis/data/datos_escuela.csv")
     df['Grupo_Completo'] = df['Grupo'] + " (" + df['Sede'] + ")"
     return df
 
