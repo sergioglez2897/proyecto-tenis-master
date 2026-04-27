@@ -36,6 +36,6 @@ st.title("🏠 Bienvenido al Panel de Gestión TheWikiTeam")
 st.write("Has iniciado sesión correctamente. Utiliza el menú lateral para navegar por las distintas áreas del club.")
 
 try:
-    st.image("data/image_0.png", width=300)
+    st.image("demo_tenis/data/image_0.png", width=300)
 except Exception as e:
     st.warning("No se pudo cargar el logo. Asegúrate de que image_0.png está en la carpeta data.")
